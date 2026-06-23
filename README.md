@@ -29,10 +29,13 @@ for that tool. The findings tell you what the code needs to produce.
 
 | Tool | What it is | Status |
 |---|---|---|
-| AgileLCA | Web-based LCA tool used at LBL. Needs a y-vector (list of inputs + quantities per unit of output). | Integration already live in PISCES UI. Research: document the y-vector format and any gaps. |
-| Brightway | Python LCA framework. Widely used in research. Needs Activity + Exchange objects. | Scaffold only. Research needed before implementation. |
-| OpenLCA | Free desktop LCA software. Imports JSON-LD (ecoinvent-compatible format). | Scaffold only. Research needed before implementation. |
-| PyGREET | NREL Python toolkit for biorefinery LCA. Uses pandas DataFrames. | Scaffold only. Research needed before implementation. |
+| Brightway | Python LCA framework. Widely used in research. | Scaffold ready. Research the exchange format and chemical matching before completing. |
+| OpenLCA | Free desktop LCA software. Imports JSON-LD. | Scaffold ready. Research the JSON-LD schema and Flow UUID matching before completing. |
+| PyGREET | Argonne Python GREET (just released June 2026). Computes carbon intensity for US bioprocesses. | Placeholder only. Download the beta and document the input API first. |
+
+> **AgileLCA**: Integration already ships in the PISCES frontend. This repo does not cover it.
+> If you find gaps in the AgileLCA integration while testing, file an issue in the
+> [PISCES frontend repo](https://github.com/sustainability-software-lab/project-pisces-frontend).
 
 ---
 
